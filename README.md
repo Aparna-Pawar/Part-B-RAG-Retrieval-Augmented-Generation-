@@ -38,4 +38,4 @@ streamlit run rag_app.py
 ☁️ Access Online
 
 You can also access the RAG chatbot directly on Streamlit Cloud:
-
+https://6kujujvabcmsxrozvnrdq6.streamlit.app/
