@@ -9,6 +9,6 @@ sentence-transformers
 PyPDF2
 pymupdf
 langchain-groq
-numpy
+numpy<2
 pandas
 pybind11>=2.12
