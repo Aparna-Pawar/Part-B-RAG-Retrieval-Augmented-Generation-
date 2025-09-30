@@ -35,3 +35,7 @@ streamlit run rag_app.py
 - The chatbot retrieves relevant content from the uploaded documents.
 - Users can ask questions, and answers are generated from the retrieved content.
 
+☁️ Access Online
+
+You can also access the RAG chatbot directly on Streamlit Cloud:
+
