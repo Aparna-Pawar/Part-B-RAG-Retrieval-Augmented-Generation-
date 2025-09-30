@@ -16,17 +16,17 @@ git clone https://github.com/Aparna-Pawar/Part-B-RAG.git
 cd Part-B-RAG
 
 2. Create and activate a virtual environment:
-python3 -m venv venv
-source venv/bin/activate   # macOS/Linux
-venv\Scripts\activate      # Windows
+- python3 -m venv venv
+- source venv/bin/activate   # macOS/Linux
+- venv\Scripts\activate      # Windows
 
-3. Install dependencies
+3. Install dependencies:
 pip install -r requirements.txt
 
 4. If your version requires API keys for any service, create a .env file and add your own API keys:
 
-YOUR_API_KEY_NAME=your_api_key_here 
-(e.g. GROQ_API_KEY="your_api_key")
+- YOUR_API_KEY_NAME=your_api_key_here 
+  (e.g. GROQ_API_KEY="your_api_key")
 
 Run Streamlit Locally 
 streamlit run rag_app.py
