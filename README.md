@@ -48,7 +48,7 @@ streamlit run rag_app.py
 ⚠️ Limitationsz;
 - Requires users to provide their own API keys (Groq API Key).
 - Model answers depend on retrieval quality + Groq model output, so incorrect or incomplete answers are possible if documents are not well structured. So please use the documents which are provided in a repo.
-- Currently supports only text/PDF documents
+- Currently supports only PDF documents
 
 ☁️ Access Online
 
