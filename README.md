@@ -45,7 +45,7 @@ streamlit run rag_app.py
 - The chatbot retrieves relevant content from the uploaded documents.
 - Users can ask questions, and answers are generated from the retrieved content.
 
-⚠️ Limitationsz;
+⚠️ Limitations:
 - Requires users to provide their own API keys (Groq API Key).
 - Model answers depend on retrieval quality + Groq model output, so incorrect or incomplete answers are possible if documents are not well structured. So please use the documents which are provided in a repo.
 - Currently supports only PDF documents
