@@ -54,7 +54,7 @@ if uploaded_pdf and "qa_chain" not in st.session_state:
         vectorstore = create_vector_store(pdf_text)
         qa_chain, memory = create_qa_chain_with_memory(vectorstore)
 
-        #Store in session state (cached)
+        #Store in session state (cached) 
         st.session_state.qa_chain = qa_chain
         st.session_state.memory = memory
         st.session_state.chat_history = []
