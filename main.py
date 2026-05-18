@@ -24,9 +24,9 @@ def extract_text_from_pdf(pdf_file):
 
 # Embedding and Vector Store
 def create_vector_store(text):
-    text_splitter = RecursiveCharacterTextSplitter(separators=["\n\n", "\n", ".", " ", ""],chunk_size=900, chunk_overlap=150)
+    text_splitter = CharacterTextSplitter(separator="\n", chunk_size=800, chunk_overlap=150)
     chunks = text_splitter.split_text(text)
-    embeddings = HuggingFaceEmbeddings(model_name="BAAI/bge-large-en-v1.5")
+    embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
     vectorstore = FAISS.from_texts(chunks, embedding=embeddings)
     return vectorstore
 
@@ -76,7 +76,7 @@ if "qa_chain" in st.session_state:
 
     # Show chat history
     if st.session_state.chat_history:
-        st.subheader("Chat History")
+        st.subheader("💬 Chat History")
         for speaker, msg in st.session_state.chat_history:
             st.write(f"**{speaker}:** {msg}")
 
