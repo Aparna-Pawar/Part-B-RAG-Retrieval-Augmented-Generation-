@@ -48,7 +48,6 @@ st.title("📄 Document Q&A using RAG")
 # Upload PDF
 uploaded_pdf = st.file_uploader("Upload your PDF", type="pdf")
 
-
 if uploaded_pdf and "qa_chain" not in st.session_state:
     with st.spinner("Processing PDF and generating knowledge base..."):
         pdf_text = extract_text_from_pdf(uploaded_pdf)
