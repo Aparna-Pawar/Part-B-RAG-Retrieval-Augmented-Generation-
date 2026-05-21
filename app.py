@@ -32,7 +32,7 @@ def create_vector_store(text):
 
 # Create Conversational QA Chain with Memory
 def create_qa_chain_with_memory(vectorstore):
-    llm = ChatGroq(model="llama-3.1-8b-instant", api_key=GROQ_API_KEY)
+    llm = ChatGroq(model="llama-3.3-70b-versatile", api_key=GROQ_API_KEY)
     memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
     qa_chain = ConversationalRetrievalChain.from_llm(
         llm=llm,
