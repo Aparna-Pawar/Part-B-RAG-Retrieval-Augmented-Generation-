@@ -46,6 +46,7 @@ st.set_page_config(page_title="Q&A Bot")
 st.title("📄 Document Q&A using RAG")
 
 # Upload PDF
+
 uploaded_pdf = st.file_uploader("Upload your PDF", type="pdf")
 
 if uploaded_pdf and "qa_chain" not in st.session_state:
